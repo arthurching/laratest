@@ -11,3 +11,9 @@ class Controller extends BaseController
 {
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
 }
+
+
+$products = App\Product::all();
+foreach ($products as $product) {
+    echo $products->name;
+}
